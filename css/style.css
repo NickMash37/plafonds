@@ -104,4 +104,34 @@ a:visited {
   margin-right: 1em;
 }
 
+.guarantee {
+  width: 100%;
+  background-color: aquamarine;
+  height: 15em;
+  margin: 2.9em 0;
+  padding: 0 30%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.guarantee-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+  justify-content: space-around;
+  align-items: center;
+}
+.guarantee-item p {
+  width: 100%;
+  margin-top: 2em;
+  font-size: 1.3em;
+}
+.guarantee-item i {
+  font-size: 4em;
+  overflow-y: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */
