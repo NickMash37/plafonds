@@ -1,7 +1,129 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+a,
+a:active,
+a:visited {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+// Header styles
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #b8b7b7;
+
+    &-contacts {
+        width: 30%;
+        margin: 0 auto;
+        height: 3em;
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 0 0 5%;
+
+        &__socials {
+            display: flex;
+            flex-direction: row;
+            font-size: 1em;
+            
+            i {
+                margin-right: 0.5em;
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
+
+// Navbar styles
+
+.navbar {
+    width: 80%;
+    margin: 2em auto;
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+
+        &__logo {
+            img {
+                width: 30%;
+            }
+        }
+
+        &__navbar {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                gap: 2em;
+
+                li {
+                    list-style-type: none;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: grey;
+                        transition: all .2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+// Main styles 
+
+.main {
+
+    img {
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        opacity: .25;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 70%;
+        margin: 20% 5em;
+        z-index: 2;
+
+        h3 {
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        p {
+            font-weight: 700;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 1.2em;
+                color: #fff;
+                border: 1px solid transparent;
+                padding: 0.3em;
+                border-radius: 50%;
+                background-color: blue;
+                margin-right: 1em;
+            }
+        }
+    }
 }
