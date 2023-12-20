@@ -134,4 +134,54 @@ a:visited {
   overflow-y: hidden;
 }
 
+.owl-carousel {
+  display: block;
+}
+
+.owl-stage-outer {
+  display: block;
+  height: 50em;
+}
+
+.owl-nav {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 20%;
+}
+.owl-nav button {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.owl-nav button span {
+  width: 100px;
+  align-self: center;
+  font-size: 80px;
+  color: #3b873b;
+  cursor: pointer;
+}
+.owl-nav button span:hover {
+  color: #275d27;
+}
+
+.examples {
+  width: 100%;
+  display: block;
+}
+.examples .slider {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.examples .slider-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.examples .slider-item img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
