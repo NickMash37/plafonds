@@ -134,54 +134,38 @@ a:visited {
   overflow-y: hidden;
 }
 
-.owl-carousel {
-  display: block;
-}
-
-.owl-stage-outer {
-  display: block;
-  height: 50em;
-}
-
-.owl-nav {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  width: 20%;
-}
-.owl-nav button {
-  display: flex;
-  width: 100%;
-  height: 50px;
-}
-.owl-nav button span {
-  width: 100px;
-  align-self: center;
-  font-size: 80px;
-  color: #3b873b;
-  cursor: pointer;
-}
-.owl-nav button span:hover {
-  color: #275d27;
-}
-
 .examples {
   width: 100%;
-  display: block;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.examples h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 1em auto;
 }
 .examples .slider {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
-.examples .slider-item {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.examples .slider-item img {
   width: 100%;
+}
+.examples .slider .slide-item {
+  width: 100%;
+}
+.examples .slider .slide-item img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.arrows {
+  margin: 0.5em auto;
+  display: flex;
+  gap: 2em;
+}
+.arrows .fa-angles-left:hover,
+.arrows .fa-angles-right:hover {
+  cursor: pointer;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

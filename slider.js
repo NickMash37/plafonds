@@ -1,9 +1,13 @@
-$(document).ready(($) => {
-    $('.slider').owlCarousel({
-        items: 1,
-        margin: 0,
-        nav: true,
-        loop: true,
-        lazyLoad: true
-    })
+$('.slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    adaptiveHeight: true,
+    prevArrow: '<i class="fa-solid fa-angles-left"></i>',
+    nextArrow: '<i class="fa-solid fa-angles-right"></i>',
+    appendArrows: $('.arrows'),
+    LazyLoad: 'ondemand'
 })
