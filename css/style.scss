@@ -266,3 +266,73 @@ a:visited {
         }
     }
 }
+
+// Terms style
+
+.terms {
+    width: 80%;
+    margin: 3em auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    h3 {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    &-item {
+        width: 30%;
+        text-align: center;
+    }
+}
+
+// FAQ styles
+
+.faq {
+    width: 80%;
+    margin: 7em auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-items {
+        width: 40%;
+
+        &__item {
+            padding: 1em;
+            margin-bottom: 1em;
+            border: 1px solid grey;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+
+            p {
+                margin: 1em;
+                width: 100%;
+                display: none;
+                cursor: default;
+            }
+
+            span {
+                width: 90%;
+                cursor: default;
+            }
+            
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.visible {
+    display: flex !important;
+}
+
+.transform {
+    transform: rotate(-90deg);
+    transition: transform .2s ease-in-out;
+}

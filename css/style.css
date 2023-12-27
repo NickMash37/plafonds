@@ -219,4 +219,63 @@ a:visited {
   font-weight: 700;
 }
 
+.terms {
+  width: 80%;
+  margin: 3em auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.terms h3 {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.terms-item {
+  width: 30%;
+  text-align: center;
+}
+
+.faq {
+  width: 80%;
+  margin: 7em auto;
+  display: flex;
+  justify-content: space-between;
+}
+.faq-items {
+  width: 40%;
+}
+.faq-items__item {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid grey;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.faq-items__item p {
+  margin: 1em;
+  width: 100%;
+  display: none;
+  cursor: default;
+}
+.faq-items__item span {
+  width: 90%;
+  cursor: default;
+}
+.faq-items__item i {
+  cursor: pointer;
+}
+
+.visible {
+  display: flex !important;
+}
+
+.transform {
+  transform: rotate(-90deg);
+  transition: transform 0.2s ease-in-out;
+}
+
 /*# sourceMappingURL=style.css.map */
