@@ -1,11 +1,10 @@
-const arrowDown = document.querySelectorAll('.fa-angle-down')
+const arrowDown = document.querySelectorAll('.arrow-block')
+const btn = document.querySelector('.fa-angle-down')
 const text = document.querySelectorAll('.text')
-const headText = document.querySelector('.head-text')
+const headText = document.querySelectorAll('.head-text')
 
-// for (const arrow of arrowDown) {
-//     arrow.addEventListener('click', () => {
-//         text.forEach((item, idx) => {
-//             console.log(item[0]);
-//         })
-//     })
-// }
+arrowDown.forEach((el, idx) => {
+    el.addEventListener('click', () => {
+        el.nextElementSibling.classList.toggle('visible')
+    })
+})

@@ -174,8 +174,8 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-  align-items: center;
   justify-content: center;
+  align-items: stretch;
 }
 .catalogue h3 {
   width: 100%;
@@ -189,10 +189,12 @@ a:visited {
 .catalogue-item img {
   width: 100%;
   margin-bottom: 2em;
+  max-height: 200px;
 }
 .catalogue-item p {
   margin-bottom: 2em;
   font-weight: 700;
+  padding: 0 1em;
 }
 
 .services {
@@ -267,6 +269,12 @@ a:visited {
 }
 .faq-items__item i {
   cursor: pointer;
+}
+
+.arrow-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .visible {
