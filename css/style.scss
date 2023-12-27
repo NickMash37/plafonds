@@ -203,3 +203,36 @@ a:visited {
         color: red;
     }
 }
+
+// Catalogue style
+
+.catalogue {
+    width: 80%;
+    margin: 3em auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        width: 100%;
+    }
+
+    &-item {
+        width: 23%;
+        align-self: center;
+        text-align: center;
+        border: 1px solid grey;
+
+        img {
+            width: 100%;
+            margin-bottom: 2em;
+        }
+
+        p {
+            margin-bottom: 2em;
+            font-weight: 700;
+        }
+    }
+}

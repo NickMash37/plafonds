@@ -9,5 +9,5 @@ $('.slider').slick({
     prevArrow: '<i class="fa-solid fa-angles-left"></i>',
     nextArrow: '<i class="fa-solid fa-angles-right"></i>',
     appendArrows: $('.arrows'),
-    LazyLoad: 'ondemand'
+    fade: true
 })

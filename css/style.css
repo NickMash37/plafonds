@@ -168,4 +168,31 @@ a:visited {
   color: red;
 }
 
+.catalogue {
+  width: 80%;
+  margin: 3em auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.catalogue h3 {
+  width: 100%;
+}
+.catalogue-item {
+  width: 23%;
+  align-self: center;
+  text-align: center;
+  border: 1px solid grey;
+}
+.catalogue-item img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.catalogue-item p {
+  margin-bottom: 2em;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */
