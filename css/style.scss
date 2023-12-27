@@ -236,3 +236,33 @@ a:visited {
         }
     }
 }
+
+// Services style
+
+.services {
+    width: 80%;
+    margin: 3em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    h3 {
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    &-item {
+        width: 30%;
+        text-align: center;
+        border: 1px solid grey;
+        
+        img {
+            width: 100%;
+        }
+
+        p {
+            margin: 1em auto;
+            font-weight: 700;
+        }
+    }
+}

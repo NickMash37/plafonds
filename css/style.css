@@ -195,4 +195,28 @@ a:visited {
   font-weight: 700;
 }
 
+.services {
+  width: 80%;
+  margin: 3em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.services h3 {
+  width: 100%;
+  margin-bottom: 3em;
+}
+.services-item {
+  width: 30%;
+  text-align: center;
+  border: 1px solid grey;
+}
+.services-item img {
+  width: 100%;
+}
+.services-item p {
+  margin: 1em auto;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */
