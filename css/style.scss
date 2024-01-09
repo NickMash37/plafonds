@@ -86,6 +86,13 @@ a:visited {
         }
     }
 }
+
+// Mobile navigation
+
+.mobile-nav {
+    display: none;
+}
+
 // Main styles 
 
 .main {
@@ -361,4 +368,158 @@ a:visited {
     outline: none;
     border: 1px solid grey;
     cursor: pointer;
+}
+
+// Media queries
+
+@media screen and (max-width: 1000px) {
+    .header {
+        width: 100%;
+
+        &-contacts {
+            width: 100%;
+            justify-content: space-around;
+
+            &__socials {
+                a {
+                    font-size: 1em;
+
+                    i {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        padding: 2em 1em;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            font-size: 2em;
+            overflow: hidden;
+        }
+
+        &__navbar {
+            display: none;
+        }
+    }
+
+    .main {
+        width: 100%;
+
+        img {
+            display: none;
+        }
+
+        &-text {
+            width: 100%;
+            margin: 2em 0.5em;
+
+            h3 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        &-form {
+            display: none;
+        }
+    }
+
+    .guarantee {
+        margin: 3em auto;
+        justify-content: center;
+        padding: 0 0.5em;
+
+        &-item {
+            width: 100%;
+
+            i {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 0.9em;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .catalogue {
+        width: 100%;
+        flex-direction: column;
+
+        h3 {
+            padding: 1em;
+        }
+
+        &-item {
+            width: 90%;
+        }
+    }
+
+    .services {
+        flex-direction: column;
+        width: 90%;
+        margin: 1em auto;
+        gap: 1em;
+
+        h3 {
+            margin: 1em 0;
+        }
+
+        &-item {
+            width: 100%;
+        }
+    }
+
+    .terms {
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-item {
+            width: 45%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .faq {
+        flex-direction: column;
+
+        button {
+            width: 80%;
+            text-align: center;
+            color: #000;
+        }
+
+        &-items {
+            width: 100%;
+
+        }
+    }
+
+    .b24-form {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .b24-form-header-title{
+        overflow: hidden;
+    }
 }
